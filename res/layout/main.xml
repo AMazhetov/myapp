@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vvedite pervoe chislo"
+            android:id="@+id/textView2" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp" android:background="#ffffff"
+            android:textColor="#000000" android:textAlignment="center" android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vvedite vtoroe chislo"
+            android:id="@+id/textView" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:background="#ffffff" android:layout_above="@+id/umnosh" android:layout_alignLeft="@+id/vychti"
+            android:layout_marginBottom="25dp" android:textColor="#000000" android:textAlignment="center"
+            android:gravity="center" android:layout_gravity="center_horizontal"/>
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="*"
+            android:id="@+id/umnosh"
+            android:layout_above="@+id/razdeli" android:layout_alignRight="@+id/editText2"/>
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:id="@+id/sloshi"
+            android:layout_centerVertical="true" android:layout_alignLeft="@+id/vychti"/>
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="-"
+            android:id="@+id/vychti"
+            android:layout_above="@+id/sloshi" android:layout_alignLeft="@+id/editText1"/>
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="/"
+            android:id="@+id/razdeli" android:layout_alignTop="@+id/sloshi" android:layout_alignLeft="@+id/umnosh"/>
+    <TextView
+
+            android:layout_width="400dp"
+            android:layout_height="30dp"
+            android:text="Result"
+            android:id="@+id/Answer"
+            android:textSize="20dp"
+            android:textAlignment="center" android:editable="true"
+            android:layout_below="@+id/sloshi" android:layout_centerHorizontal="true" android:layout_marginTop="32dp"
+            android:singleLine="true" android:textColor="#ffffff" android:gravity="center"
+            android:layout_gravity="center_horizontal"/><![CDATA[
+    />
+]]>
+</LinearLayout>
+
